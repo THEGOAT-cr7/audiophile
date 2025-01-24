@@ -2,7 +2,9 @@
 
 .container {
   max-width: 1280px;
-  padding: 20px;
+  padding-top: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
   margin: auto;
 }
 .btn {
@@ -107,4 +109,40 @@ ol {
 .hero-title a:hover {
   background: transparent;
   color: var(--primary);
+}
+
+.main{
+  padding-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  width: 100%;
+}
+.main .ctg{
+  background-color: var(--lighter);
+  border-radius: 8px;
+  text-align: center;
+
+}
+.main img{
+  position: absolute;
+  top: 860px;
+}
+.headphones{
+  position: absolute;
+  left: 300px;
+}
+.speakers{
+  position: absolute;
+  left: 685px;
+}
+.earphones{
+  position: absolute;
+  left: 1090px;
+}
+.main .ctg{
+  padding: 120px 100px 50px;
+}
+.main .ctg h3{
+  padding-bottom: 20px;
 }
