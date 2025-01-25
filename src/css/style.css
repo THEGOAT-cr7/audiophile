@@ -3,8 +3,8 @@
 .container {
   max-width: 1280px;
   padding-top: 20px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 40px;
+  padding-right: 40px;
   margin: auto;
 }
 .btn {
@@ -43,7 +43,7 @@ ol {
 }
 /* ! Header */
 #header {
-  background: #141414;
+  background: #131313;
 }
 #header .container {
   background: url("../images/bts.png") no-repeat center right / contain;
@@ -110,10 +110,14 @@ ol {
   background: transparent;
   color: var(--primary);
 }
-
+main{
+  background-color: var(--light);
+  
+}
 .main{
   padding-top: 120px;
   display: flex;
+  background-color: var(--light);
   align-items: center;
   justify-content: space-between; 
   width: 100%;
@@ -122,27 +126,194 @@ ol {
   background-color: var(--lighter);
   border-radius: 8px;
   text-align: center;
+  width: 350px;
+  padding-top: 50px;
+  height: 350px;
+  margin-bottom: 100px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.main .ctg:hover{
+  transform: translateY(-15px);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
 
-}
-.main img{
-  position: absolute;
-  top: 860px;
-}
-.headphones{
-  position: absolute;
-  left: 220px;
-}
-.speakers{
-  position: absolute;
-  left: 630px;
-}
-.earphones{
-  position: absolute;
-  left: 1030px;
-}
-.main .ctg{
-  padding: 120px 100px 50px;
-}
 .main .ctg h3{
-  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+.main .ctg p{
+  color: var(--primary);
+}
+
+/* hero 2 */
+
+.hero2{
+  background-color: var(--primary);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 100px;
+}
+.hero2 h1{
+  font-size: 52px;
+  line-height: 58px;
+  width: 300px;
+}
+.hero2 p{
+  width: 350px;
+  line-height: 25px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.hero2 .btn{
+  color: #fff;
+  padding: 15px 30px;
+  border: 2px solid var(--primary);
+  background-color: #000;
+}
+.hero2 .btn:hover{
+  border: 2px solid var(--darken);
+  background-color: var(--primary);
+}
+.hero2 img{
+  transition: 0.3s;
+}
+.hero2 img:hover{
+  transform: scale(110%) translateY(-21px);
+  cursor: pointer;
+}
+
+/* hero 3 */
+.hero3{
+  background-image: url("../images/zx7.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 320px;
+  transition: 0.3s;
+  display: flex;
+  background-color: #FFFFFF;
+  margin-bottom: 100px;
+  align-items: center;
+}
+.hero3:hover{
+  background-color: #dbdbdb;
+  cursor: pointer;
+  transform: scale(110%);
+}
+.hero3-info{
+  transition: 0.3s;
+}
+.hero3:hover .hero3-info{
+  transform: scale(95%) translateX(40px); 
+}
+.hero3-info .btn{
+  margin-top: 30px;
+  padding: 15px 30px;
+  border: 2px solid #000;
+  background-color: transparent;
+  color: #000;
+}
+.hero3-info .btn:hover{
+  background-color: #000;
+  color: #dbdbdb;
+}
+
+/* hero 4 */
+.hero4{
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.hero4-info{
+  background-color: #F1F1F1;
+  border-radius: 8px;
+  padding: 100px 230px;
+  text-align: center;
+}
+.hero4 img{
+  transition: 0.3s;
+}
+.hero4 img:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  transform: translateY(-10px);
+}
+.hero4-info .btn{
+  color: #000;
+  padding: 15px 30px;
+    border: 2px solid #000;
+    background-color: transparent;
+}
+.hero4 .btn:hover{
+  background-color: #000;
+  color: #F1F1F1;
+}
+.hero5{
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero5 h1{
+  font-size: 43px;
+  max-width: 400px;
+}
+span{
+  color: var(--primary);
+}
+.hero5 img{
+  transition: 0.3s;
+}
+.hero5 img:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  transform: translateY(-10px);
+}
+.hero5 p{
+  font-size: 15px;
+  width: 445px;
+  line-height: 25px;
+}
+footer{
+  background-color: var(--darken);
+}
+.footer{
+  margin-top: 100px;
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #ffff;
+  background-color: var(--darken);
+  justify-content: space-between;
+}
+.footer-links ul{
+  display: flex;
+  gap: 20px;
+}
+.footer-links ul li a{
+  color: #fff;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.footer-links i{
+  width:  50px;
+  color: #fff;
+  transition: 0.3s;
+  margin-top: 140px;
+}
+.footer-links i:hover{
+  color: var(--primary);
+}
+.footer-links ul li a:hover{
+  color: var(--primary);
+}
+.footer-info{
+  max-width: 50%;
+}
+.footer-info p{
+  padding-bottom: 30px;
+  padding-top: 30px;
+  color: #878787;
 }
